@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        
+        /* Basic styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fffae6; /* Light cream for a warm background */
+            font-family: Arial, sans-serif;
+            color: #333;
+            overflow: hidden;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        /* Card content styling */
+        .content {
+            position: relative;
+            z-index: 10;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(255, 168, 76, 0.4); /* Soft shadow with a slight orange glow */
+            color: #ff7a18; /* Orange color for the text */
+            font-family: 'Great Vibes', cursive; /* Elegant font for birthday feel */
+        }
+
+        .content p {
+            margin: 0.5em 0;
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        /* Balloon styling */
+        .balloon {
+            position: absolute;
+            bottom: -100px;
+            width: 20px;
+            height: 30px;
+            background-color: #ff7a18;
+            border-radius: 50% 50% 50% 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: float 6s ease-in-out infinite;
+            opacity: 0.8;
+        }
+        .balloon::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            width: 2px;
+            height: 20px;
+            background-color: #ff7a18;
+        }
+        .balloon:nth-child(2) { 
+            left: 20%; 
+            background-color: #ff4d4d;
+            animation-duration: 5s;
+        }
+        .balloon:nth-child(3) { 
+            left: 50%; 
+            background-color: #66b3ff;
+            animation-duration: 7s;
+        }
+        .balloon:nth-child(4) { 
+            left: 80%; 
+            background-color: #ffb366;
+            animation-duration: 6.5s;
+        }
+
+        /* Floating animation */
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Content of the birthday letter -->
+    <div class="content">
+        <p>To my pretty lover,</p>
+        <p>Hi langgga, happiest birthday and belated 30motmot!!! Iloveyouuuuuusomuchh. Know that I will always be ur number one supporter no matter what happens. I'll always be here by your side through thick and thin. Iloveyousomuch you know how much I love you. I wish you all nothing but the best, iloveyouuuuuu somuchh happy birthday!!</p>
+        <p>Sincerely yours,<br> Nathan</p>
+    </div>
+
+    <!-- Balloon decorations -->
+    <div class="balloon" style="left: 10%;"></div>
+    <div class="balloon" style="left: 20%;"></div>
+    <div class="balloon" style="left: 70%;"></div>
+    <div class="balloon" style="left: 80%;"></div>
+</body>
+</html>
